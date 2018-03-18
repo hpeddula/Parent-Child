@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <input type="radio" [value]="All" name="Child"/>{{All}}
-  <input type="radio" [value]="Male" name="Child"/>{{Male}}
-  <input type="radio" [value]="FeMale" name="Child"/>{{FeMale}}
+  <input type="radio" value="All"  (onchange)="raiseMethod()" [(ngModel)]='radioButtonValue' name="Child"/> <span class="text-primary">All</span> ({{All}})
+  <input type="radio" value="Male" (onchange)="raiseMethod()" [(ngModel)]='radioButtonValue' name="Child"/> <span class="text-primary">Male</span> ({{Male}})
+  <input type="radio" value="FeMale" (onchange)="raiseMethod()" [(ngModel)]='radioButtonValue'  name="Child"/> <span class="text-primary">FeMale</span> ({{FeMale}})
 </div>
